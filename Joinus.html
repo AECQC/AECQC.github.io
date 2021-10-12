@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join us</title>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/join.css">
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+
+  <!-- Header class nav-link changed to nav-links since bootstrap css conflicting  -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="./index.html" class="nav-logo"><img src="./assets/img/output-onlinepngtools.png" alt="" srcset=""
+          height="60px"></a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-links">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./Joinus.html" class="nav-links">Join Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="./gallery.html" class="nav-links">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-links">Our History</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-links">President's Area</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h2>Join Us </h2>
+    </div>
+
+    <div class="don">
+      <div class="dtc">
+        <p><iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSczZBYSU2Q3H55c4n-6NwZstNp7l6bRhgJ7-krpIB29nKeABA/viewform?embedded=true"
+            width="1000" height="1900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>AEC QuizClub</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="https://www.aec.ac.in/">AEC</a></li>
+            <li><a href="https://astu.ac.in/">ASTU</a></li>
+            <li><a href="https://www.teqip.in/">TEQIP</a></li>
+            <li><a href="./about.html">History</a></li>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/quizclubAEC"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/QuizAec"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/quizclubaec/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-links");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+</body>
+
+</html>
