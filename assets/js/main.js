@@ -289,14 +289,18 @@ function debounce(func, wait = 10, immediate = true) {
 
 // Join Us Button
 
-    const join_button= document.getElementById('join');
+    const join=document.querySelector(".join_us");
+  const refreshButton = () => {
+    if(document.documentElement.scrollTop <= 1040){
+      join.style.display = "none";
+    }
+    else{
+      join.style.display = "block";
+    }
+  };
+  refreshButton();
 
-    function showButton(){
-      const heroLength = hero.offsetHeight;
-      let reqScrollHeight= window.scrollY + window.innerHeight;
-      let isVisible = reqScrollHeight > 3*heroLength;
-      isVisible ? join_button.style.setProperty('display','block') : join_button.style.setProperty('display','none');
-      // isVisible ? visibility = true : visibility= false;
-  }
-  window.addEventListener('scroll', debounce(showButton));
+  document.addEventListener("scroll", (e) =>{
+    refreshButton();
+  })
   
