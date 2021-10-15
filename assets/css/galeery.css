@@ -32,7 +32,7 @@ a {
 .header{
     border-bottom: 1px solid #E2E8F0;
     background-color: rgb(50, 141, 226);
-
+    /* position: fixed; */
 }
 
 .navbar {
