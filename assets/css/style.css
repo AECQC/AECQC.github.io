@@ -1975,3 +1975,9 @@ letter-spacing: 1px;
 #services h2{
   color: rgb(175, 169, 169);
 }
+
+#incharge-note .hlw{
+  width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
