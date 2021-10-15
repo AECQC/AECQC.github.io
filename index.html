@@ -85,7 +85,9 @@
     <div class="hero-container" data-aos="fade-up">
       <h1>Welcome to AECQC</h1>
       <h2>Unlocking knowledge at the speed of thought.Be ready. Be smart. Be noticed!</h2>
-      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+      <a href="#about">
+        <div class="scroll-down"></div>
+      </a>
     </div>
   </section>
   <!-- End Hero -->
@@ -161,23 +163,17 @@
 
 
     <div class="iframe-container">
-      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ag1_5Sg8770" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe></p>
+      <p><iframe width="560" height="315" src="https://www.youtube.com/embed/nINSYPQYLBM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
     </div>
     <!-- End About Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!--<section id="services" class="services">
       <div class="container">
 
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Upcoming Events</h2>
-          <p>Make your memories with us. your vision, our actions</p>
-        </div>
+        
 
-        <!---->
+        <!-
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up">
@@ -224,8 +220,85 @@
 
       </div>
     </section>
+    ->
     <!-- End Services Section -->
+    <section id="services">
+    <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <h2>Upcoming Events</h2>
+      <p>Make your memories with us. your vision, our actions</p>
+    </div>
+    <div class="calendar">
 
+      <div class="col leftCol">
+        <div class="content">
+          <h1 class="date">Friday<span>November 12th</span></h1>
+          <div class="notes">
+            <p>
+              <input type="text" value="" placeholder="scheduled events"/>
+              <a  title="Add note" class="addNote animate"></a>
+            </p>
+            <ul class="noteList">
+              <li>1.Engineers Quiz<a href="#" title="Remove note" class="removeNote animate"></a></li>
+              <li>2.Rahaat Quiz<a href="#" title="Remove note" class="removeNote animate"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col rightCol">
+        <div class="content">
+          <h2 class="year">2021</h2>
+          <ul class="months">
+            <li><a title="Jan" data-value="1">Jan</a></li>
+            <li><a title="Feb" data-value="2">Feb</a></li>
+            <li><a title="Mar" data-value="3">Mar</a></li>
+            <li><a title="Apr" data-value="4">Apr</a></li>
+            <li><a title="May" data-value="5">May</a></li>
+            <li><a title="Jun" data-value="6">Jun</a></li>
+            <li><a title="Jul" data-value="7">Jul</a></li>
+            <li><a title="Aug" data-value="8">Aug</a></li>
+            <li><a title="Sep" data-value="9" >Sep</a></li>
+            <li><a title="Oct" data-value="10">Oct</a></li>
+            <li><a title="Nov" data-value="11" class="selected">Nov</a></li>
+            <li><a title="Dec" data-value="12">Dec</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="weekday">
+            <li><a  title="Mon" data-value="1">Mon</a></li>
+            <li><a  title="Tue" data-value="2">Tue</a></li>
+            <li><a  title="Wed" data-value="3">Wed</a></li>
+            <li><a  title="Thu" data-value="4">Thu</a></li>
+            <li><a  title="Fri" data-value="5">Fri</a></li>
+            <li><a  title="Say" data-value="6">Sat</a></li>
+            <li><a  title="Sun" data-value="7">Sun</a></li>
+          </ul>
+          <div class="clearfix"></div>
+          <ul class="days">
+            <script>
+              for( var _i = 1; _i <= 31; _i += 1 ){
+                var _addClass = '';
+                if( _i === 12 ){ _addClass = ' class="selected"'; }
+                
+                switch( _i ){
+                  case 8:
+                  case 10:
+                  case 27:
+                    _addClass = ' class="event"';
+                  break;
+                }
+
+                document.write( '<li><a href="#" title="'+_i+'" data-value="'+_i+'"'+_addClass+'>'+_i+'</a></li>' );
+              }
+            </script>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+
+    </div>
+  </section>
     <!-- ======= Counts Section ======= -->
     <section id="counts" class="counts  section-bg">
       <div class="container">
@@ -582,67 +655,13 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>AEC Quiz Club</h3>
-              <p class="pb-3"><em>You can reached us through</em></p>
-              <p>
-                AEC <br>
-                Jalukbari, GHY<br><br>
-                <strong>Phone:</strong> +919476654615 <br>
-                <strong>Email:</strong> quizclubaec@gmail.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="https://twitter.com/QuizAec" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="https://www.facebook.com/quizclubAEC" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/quizclubaec/" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCu-KDjZuRUHYOQ3FJuX-GIQ" class="linkedin"><i
-                    class="bi bi-youtube"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.aec.ac.in/">AEC</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="https://astu.ac.in/">ASTU</a></li>
-
-              <li><i class="bx bx-chevron-right"></i> <a href="https://www.aec.ac.in/project/teqip/home">TEQIP</a></li>
-            </ul>
-          </div>
-
-
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>@AECQC</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/ -->
-        Designed and developed by <a href="#" style="color: black;">Rahul Ray</a>
-      </div>
-    </div>
-  </footer>
+ 
   <!-- End Footer -->
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+      
 
 
   <!-- Join Now Button -->
@@ -663,6 +682,8 @@
   <script src="assets/js/main.js"></script>
 
   <!-- Footer  -->
+
+
   <footer>
     <svg viewBox="0 0 120 28">
       <defs>
