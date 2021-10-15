@@ -566,7 +566,7 @@ section {
 
 /*--------------------------------------------------------------
 # About
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .about {
   background: url("../img/about-bg.jpg") center center no-repeat;
   background-size: cover;
@@ -1912,4 +1912,52 @@ a{
   font-weight: 600;
   margin-top: 100px;
 
+}
+
+#president-note h2{
+  color: white;
+  
+}
+#president-note .row{
+  margin: 1px 130px;
+}
+#president-note h4{
+  color: rgb(177, 170, 170);
+}
+
+
+@media(max-width:744px){
+
+  #president-note .row{
+    margin: 1px 20px;
+  }
+  #incharge-note .row{
+    margin: 1px 20px;
+  }
+
+}
+
+#portfolio{
+  background-color: rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+#services{
+  background-image: linear-gradient(rgba(44, 42, 42, 0.555), rgba(0, 0, 0, 0.555)),
+    url(/assets/img/pexels-stephan-seeber-1054218.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+#services h2{
+  color: rgb(175, 169, 169);
 }
