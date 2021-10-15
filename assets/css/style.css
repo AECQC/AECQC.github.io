@@ -1896,3 +1896,21 @@ a{
   font-size:13px;
   font-weight: 600;
 }
+
+
+#hero h1 {
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid black;
+  animation: text 5s steps(18) infinite;
+}
+@keyframes text{
+  0%{
+    width: 0ch;
+
+  }
+  30%{
+    width: 18ch;
+  }
+}
